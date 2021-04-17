@@ -1,0 +1,156 @@
+:root {
+    --primary: #00f7ef;
+    --secondary: #fe2c55;
+    --primary-soft: #1b6664;
+    --accent: #000000;
+    --white: #ffff;
+    --bg-light: #ffffff;
+    --bg-dark: #f5f6f6;
+    --border: #e3e3e4;
+    --border-light: #f1f1f2;
+    --font-family: "Fira Sans";
+    --text-regular: #000000;
+    --text-placeholder: #909399;
+    --text-heading-2: #7d7d7d;
+    --text-heading-3: #afafb5;
+    --text-heading-4: #f1f1f2;
+    --text-heading-5: #e3e3e4;
+    --text-on-primary: #ffffff;
+    --text-on-accent: #ffffff;
+    --header-bg: var(--bg-light);
+    --header-border: var(--border);
+    --header-color: var(--text-regular);
+    --header-color-hover: var(--primary);
+    --header-height: 4.375rem;
+    --header-logo-filter: invert(0);
+    --header-search-bg: var(--header-bg);
+    --header-search-border: var(--header-border);
+    --header-search-color: var(--header-color);
+    --header-search-color-hover: var(--header-color-hover);
+    --drawer-bg: var(--bg-light);
+    --drawer-text: var(--text-regular);
+    --drawer-text-hover: var(--primary);
+    --drawer-text-header-color: var(--text-heading-3);
+    --footer-bg: var(--accent);
+    --footer-border: var(--footer-bg);
+    --footer-text: var(--text-on-accent);
+    --footer-text-hover: var(--primary);
+    --footer-version-border: var(--text-heading-4);
+    --greeting-bar-bg: var(--accent);
+    --greeting-bar-color: var(--text-on-accent);
+    --ripple-effect: rgba(0, 0, 0, 0.1);
+    --control-bg: #3e3c3a;
+    --controls-color: var(--text-on-accent);
+}
+
+.text-box {
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    outline: 0;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-light);
+    border: 3px solid var(--primary);
+    border-radius: 8px;
+    padding: 0.8rem 3.3rem 0.8rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: var(--text-regular);
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.text-box:focus {
+    box-shadow: 2px 2px 0px 2px var(--secondary);
+}
+
+.text-primary {
+    color: var(--secondary);
+}
+
+.logo {
+    line-height: 0.8rem;
+    cursor: pointer;
+}
+
+.logo-desc {
+    margin: 0 0 0 2.8em;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box .text-box {
+    padding-right: 9.4rem;
+}
+
+.search-button {
+    color: var(--secondary);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0.8rem 1.3rem;
+    border-radius: 0px 8px 8px 0px;
+    transition: background-color 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: var(--primary);
+    color: #000000;
+}
+
+.search-button:hover > i.icon {
+    color: #000000 !important;
+}
+.search-button i.icon {
+    color: var(--secondary) !important;
+}
+
+.search-button .text {
+    font-weight: 600;
+}
+
+.icon-circle {
+    display: inline-block;
+    background-color: var(--secondary);
+    padding: 1rem;
+    border-radius: 100%;
+}
+
+.btn-download {
+    background: var(--primary);
+    color: black !important;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.btn-download:hover {
+    box-shadow: 2px 2px 0px 2px var(--secondary);
+}
+
+.btn {
+    background: var(--primary);
+    color: black !important;
+    padding: 10px 15px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 0px 2px var(--secondary);
+}
