@@ -15,8 +15,6 @@
     <body>
         <div id="app"><router-view></router-view></div>
 
-
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script src="{{ mix('js/app.js') }}"></script>
     </body>
 </html>
