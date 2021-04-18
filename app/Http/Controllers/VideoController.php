@@ -13,7 +13,14 @@ class VideoController extends Controller
 
     public function __construct()
     {
-        $this->tiktok = new \Sovit\TikTok\Api();
+        $this->tiktok = new \Sovit\TikTok\Api([
+            "user-agent"		=> 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36', // Valid desktop browser HTTP User Agent
+            "proxy-host"		=> false,
+            "proxy-port"		=> false,
+            "proxy-username"	=> false,
+            "proxy-password"	=> false,
+            "cache-timeout"		=> 3600
+        ]);
     }
 
     public function index()
